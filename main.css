@@ -1,0 +1,274 @@
+body{
+font-family: sans-serif;
+margin:0!important;
+background-image: url(bg.png);
+cursor: url(cursor.png), auto;
+
+}
+
+#title{
+font-size: 5vh;
+color:#333;
+font-family: sans-serif;
+text-align: center;
+margin:0vh;
+
+
+}
+
+a:hover
+{
+
+cursor: url(cursor2.png), auto;
+
+}
+
+#a1:hover
+{
+animation-name: example2;
+animation-duration: 1s;
+
+}
+#a1{
+text-decoration: none;
+display: block;
+color:#333;
+
+}
+
+#container{
+width:80%;
+height:80vh;
+margin-left:10%;
+background-color:#f2f2f2;
+margin-top:10vh;
+margin-bottom: 0;
+}
+
+#menu{
+margin:2vh;
+float:left;
+width:74%;
+height:10vh;
+font-size: 3vh;
+background-color:#ccccff;
+text-align: center;
+}
+
+#content{
+margin:2vh;
+margin-top:0;
+float:left;
+width:74%;
+height:64vh;
+background-color:rgb(184, 204, 203);
+
+}
+#text{
+margin:2vh;
+height:60vh;
+background-color:#f2f2f2;
+text-align:center;
+}
+
+#g1,#g2,#g3,#g4
+{
+  width: 25vh;
+  height: 18vh;
+  object-fit: cover;
+  filter: grayscale(75%);
+}
+
+
+
+#gallery
+{
+width: 51vh;
+position:absolute;
+margin-left:30vh;
+margin-top:12vh;
+}
+
+#g1:hover,#g2:hover,#g3:hover,#g4:hover
+{
+animation-name: colors;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+
+
+}
+
+#credit
+{
+text-align: left;
+text-decoration: none;
+word-wrap: break-word;
+
+}
+
+#article
+{
+color:#333;
+padding:8vh;
+
+}
+
+
+#aside
+{
+
+width:21%;
+height:76vh;
+float:right;
+margin:2vh;
+background-color:rgb(184, 204, 203);
+
+
+}
+
+#top{
+
+height:6vh;
+background-color:rgb(184, 204, 203);
+margin-bottom:5vh;
+
+}
+
+#img1{
+
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+#img2{
+
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+#img2:hover,#img1:hover {
+  animation-name: example1;
+  animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#footnote {
+
+color:#f2f2f2;
+
+}
+
+#fn{
+text-align: center;
+color:#f2f2f2;
+font-size: 40%;
+}
+
+#demo
+{
+  text-align: center;
+  color:#f2f2f2;
+  font-size: 40%;
+
+}
+
+@keyframes colors{
+ from{filter: grayscale(75%);}
+ to{filter: grayscale(10%);}
+}
+
+@keyframes example {
+    from {background-color:#333;}
+    to {background-color:#111;}
+}
+
+@keyframes example1{
+ from{filter: grayscale(0%);}
+ to{filter: grayscale(100%);}
+}
+
+@keyframes example2{
+ from{background-color:rgb(184, 204, 203);}
+ to{background-color:#f2f2f2;}
+}
+
+@keyframes appear
+{
+from{opacity: 0; top: 16vh;}
+to{opacity: 0.6; top: 18vh;;}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5vh 25px;
+    text-decoration: none;
+}
+li a:hover {
+  animation-name: example;
+  animation-duration: 1s;
+
+}
+
+#asideinner
+{
+opacity: 0;
+height:72%;
+margin:2vh;
+width:15%;
+background-color: white;
+position: absolute;
+top: 18vh;
+right: 22vh;
+}
+
+#asideinner:hover
+{
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#asidetext
+{
+padding: 2vh;
+text-align: center;
+font-size: 70%;
+}
+
+button {
+    background-color: rgb(184, 204, 203);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 120%;
+        }
+
+button:hover{
+  animation-name: example2;
+  animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
